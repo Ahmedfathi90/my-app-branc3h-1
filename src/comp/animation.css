@@ -1,0 +1,35 @@
+.animation{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 185px;
+  animation-name: example;
+  animation-duration: 2s;
+}
+.animation2{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-44px, -18px);
+  animation-name: example2;
+  animation-duration: 2s;
+}
+
+@keyframes example {
+  from { left: 275px;
+     transform: rotate3d(1, 1, 1, 120deg);
+    }
+  to {  left: 185px;
+      transform: rotate3d(1, 0, 1, 0deg);
+  }
+}
+
+
+@keyframes example2 {
+  from {opacity: 0;
+    transform: translate(-142px, -18px);
+    transition-timing-function: ease-out;}
+  to { opacity: 1;
+     transform: translate(-44px, -18px);
+    transition-timing-function: ease-out;}
+}
